@@ -2,7 +2,8 @@
   "use strict";
 
   const navigation = document.querySelector(".section-nav");
-  const sections = Array.from(document.querySelectorAll(".article-section"));
+  const sectionSelector = navigation.dataset.sectionSelector || ".article-section";
+  const sections = Array.from(document.querySelectorAll(sectionSelector));
 
   if (!navigation || sections.length === 0) return;
 

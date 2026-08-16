@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gunturmanjusha.github.io/TheCosmicPattern/sitemap.xml
+Sitemap: https://thecosmicpattern.com/sitemap.xml
