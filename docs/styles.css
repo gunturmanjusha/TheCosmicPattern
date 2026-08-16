@@ -43,8 +43,7 @@ a { color: inherit; }
 .eyebrow { color: #e0c17d; text-shadow: 0 0 12px rgb(224 193 125 / 28%); }
 .section-kicker { color: var(--cobalt); }
 .eyebrow { display: flex; align-items: center; gap: 9px; }
-.eyebrow span { width: auto; height: auto; color: #e4ca8d; background: none; box-shadow: none; }
-.eyebrow span::before { content: "✦"; }
+.eyebrow span { width: 8px; height: 8px; flex: 0 0 8px; border-radius: 50%; background: #c49543; box-shadow: 0 0 8px rgb(196 149 67 / 38%); }
 .hero h1 { max-width: 720px; margin: 0; color: white; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; font-size: clamp(1.75rem, 3.25vw, 2.8rem); font-weight: 600; letter-spacing: -.035em; line-height: 1.06; }
 .hero h1 em { color: #e4ca8d; font-style: normal; text-shadow: 0 0 24px rgb(224 193 125 / 25%); }
 .hero-subtitle { max-width: 660px; margin: 14px 0 0; color: #f0f4f5; font-size: clamp(.92rem, 1.25vw, 1.04rem); }
