@@ -1,6 +1,6 @@
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
   <title id="title">The Cosmic Pattern</title>
-  <rect width="512" height="512" rx="72" fill="#071126"/>
-  <circle cx="256" cy="256" r="184" fill="#347d88"/>
-  <path fill="#e4ca8d" d="m256 58 40 158 158 40-158 40-40 158-40-158-158-40 158-40z"/>
+  <rect x="10" y="10" width="492" height="492" rx="146" fill="#2c7b81" stroke="#aead7e" stroke-width="18"/>
+  <path fill="#e0c17d" d="M256 100c14 89 67 142 156 156-89 14-142 67-156 156-14-89-67-142-156-156 89-14 142-67 156-156Z"/>
 </svg>
