@@ -202,7 +202,9 @@ a { color: inherit; }
   .cosmic-map { display: none; }
   .section { padding-block: 38px; }
   .article-grid { grid-template-columns: 1fr; grid-auto-rows: auto; }
-  .article-card, .article-card.flagship, .article-card:nth-child(odd):not(:first-child) { grid-column: auto; padding: 20px 0 21px; border-left: 0; }
+  .article-card, .article-card.flagship, .article-card:nth-child(odd):not(:first-child) { grid-column: auto; padding: 20px 0 21px; border-left: 0; text-align: center; }
+  .article-card .card-top { justify-content: center; }
+  .article-card h3 { margin-inline: auto; }
   .notes-grid section, .notes-grid section:first-child, .notes-grid section:last-child { padding: 20px 0; border: 0; border-top: 1px solid #c5d6d8; }
   .notes-grid section:first-child { border-top: 0; }
   .contact-layout { grid-template-columns: 1fr; }
