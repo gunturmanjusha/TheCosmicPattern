@@ -195,6 +195,8 @@ a { color: inherit; }
 :focus-visible { outline: 3px solid #64e5e0; outline-offset: 4px; }
 
 @media (max-width: 960px) {
+  .site-nav { grid-template-columns: 1fr; }
+  .site-nav .brand { justify-self: center; }
   .nav-links { display: none; }
   .section-heading, .notes-grid { grid-template-columns: 1fr; }
   .hero-grid { display: flex; height: 240px; min-height: 240px; align-items: flex-start; padding-block: 20px 18px; }
