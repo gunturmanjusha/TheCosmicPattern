@@ -33,14 +33,17 @@ There is no framework, npm installation, build process, backend, database, CMS, 
 ```text
 docs/
 ├── index.html
-├── about.html
-├── consultations.html
-├── contact.html
-├── saturn-mahadasha.html
-├── ketu-mahadasha.html
-├── rahu-mahadasha.html
-├── saturn-retrograde-pisces.html
-├── saturn-retrograde-2026-by-sign.html
+├── about/index.html
+├── consultations/index.html
+├── contact/index.html
+├── dr-dharmesh-mehta/index.html
+├── articles/
+│   ├── saturn-mahadasha/index.html
+│   ├── ketu-mahadasha/index.html
+│   ├── rahu-mahadasha/index.html
+│   ├── saturn-retrograde-pisces/index.html
+│   └── saturn-retrograde-2026-by-sign/index.html
+├── *.html (legacy redirect shims)
 ├── article-sections.js
 ├── styles.css
 ├── sitemap.xml
@@ -53,9 +56,7 @@ docs/
 
 ## Local viewing
 
-Open `docs/index.html` directly in a browser. No server or command is required.
-
-The site uses relative links for navigation, styles, scripts, and images, so local pages work directly while production metadata uses the canonical domain.
+Serve `docs/` from a local HTTP server and open the server root. The site uses root-relative links so nested clean URLs resolve assets exactly as they do on the custom domain.
 
 ## Deployment
 
@@ -72,4 +73,6 @@ The `docs/CNAME` file configures the custom domain. GitHub Pages should have **E
 
 Each article is a standalone HTML document with its own title, description, canonical URL, social metadata, visible author attribution, and structured data. Article text remains present in the HTML and readable when JavaScript is disabled.
 
-When adding an article, create its HTML page, link its homepage card, and add its production URL to `docs/sitemap.xml`.
+When adding an article, create it at `docs/articles/<slug>/index.html`, use root-relative internal and asset links, link its homepage card to `/articles/<slug>/`, and add that clean production URL to `docs/sitemap.xml`.
+
+The root-level legacy article and page files are intentionally minimal redirect shims. They preserve incoming links to the former `.html` URLs while immediately redirecting and declaring the clean directory URL as canonical.
