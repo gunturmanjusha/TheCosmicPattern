@@ -129,8 +129,26 @@ a { color: inherit; }
 .prose p:first-child { color: #17364a; font-size: 1.06rem; }
 .prose strong { color: #173d50; font-weight: 700; }
 .prose p:last-child { margin-bottom: 0; }
+.prose-link { color: #17566a; text-decoration-color: #c39a52; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.prose-link:hover { color: #103f50; text-decoration-thickness: 2px; }
+.guru-prose h2,
+.consultation-prose h2,
+.article-prose h2,
+.contact-copy h2 { margin: 1.65em 0 .55em; color: #17485a; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; font-size: clamp(1.25rem, 1.75vw, 1.5rem); font-weight: 600; letter-spacing: -.015em; line-height: 1.28; }
+.guru-prose h2:first-child { margin-top: 0; }
+.guru-prose h3,
+.article-prose h3 { margin: 1.5em 0 .5em; color: #31576a; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; font-size: clamp(1.1rem, 1.45vw, 1.28rem); font-weight: 600; letter-spacing: -.01em; line-height: 1.32; }
+.prose .guru-credentials { margin: 1.3em 0 1.55em; color: #173d50; line-height: 1.7; text-align: left; }
+.guru-service-list { margin-top: -.1em; }
+.guru-contact-panel { margin-top: 2.25rem; padding: clamp(30px, 5vw, 46px); text-align: center; border: 1px solid #b7cdce; border-radius: 22px; background: linear-gradient(135deg, #dcecea, #e2ebf0 62%, #e9e6eb); box-shadow: 0 18px 44px rgb(29 68 81 / 10%); }
+.guru-contact-panel .guru-contact-logo { width: 38px; height: 38px; margin: 0 auto 17px; color: #e0c17d; border-color: rgb(224 193 125 / 72%); background: #2c6d78; box-shadow: 0 8px 18px rgb(30 86 96 / 18%), inset 0 0 14px rgb(126 214 210 / 12%); }
+.prose .guru-contact-panel h2 { margin: 0; color: #17485a; }
+.prose .guru-contact-panel p { max-width: 700px; margin: 15px auto 0; color: #294b5c; text-align: center; }
+.guru-contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 11px; margin-top: 24px; }
+.guru-contact-links a { min-width: 205px; padding: 11px 18px; color: #245365; border: 1px solid #adc5c6; border-radius: 999px; background: rgb(247 250 249 / 75%); font-size: .88rem; font-weight: 650; text-decoration: none; overflow-wrap: anywhere; box-shadow: none; }
+.guru-contact-links a:last-child { color: #245365; border-color: #adc5c6; background: rgb(247 250 249 / 75%); box-shadow: none; }
+.guru-contact-links a:hover { transform: translateY(-1px); box-shadow: 0 10px 22px rgb(30 86 96 / 19%); }
 .consultation-page { padding-block: 50px 68px; background: var(--page-background); }
-.consultation-prose h2 { margin: 1.8em 0 .6em; color: #17485a; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; font-size: clamp(1.35rem, 2.2vw, 1.7rem); font-weight: 600; letter-spacing: -.018em; line-height: 1.25; }
 .consultation-list { margin: -.15em 0 1.35em; padding-left: 1.35em; color: #102c3f; font-size: 1.06rem; font-weight: 500; line-height: 1.65; }
 .consultation-list li { margin-block: .22em; padding-left: .25em; }
 .consultation-list li::marker { color: #b48332; }
@@ -147,9 +165,8 @@ a { color: inherit; }
 .sign-nav .section-nav-links { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .sign-nav button { width: 100%; min-width: 0; }
 .article-page { padding-block: 48px 70px; background: var(--page-background); }
-.article-prose h2 { margin: 2em 0 .65em; color: #17485a; font-size: clamp(1.35rem, 2.2vw, 1.7rem); letter-spacing: -.018em; line-height: 1.25; scroll-margin-top: 18px; }
+.article-prose h2 { scroll-margin-top: 18px; }
 .article-prose h2:first-child { margin-top: 0; }
-.article-prose h3 { margin: 1.8em 0 .6em; color: #31576a; font-size: clamp(1.16rem, 1.8vw, 1.4rem); letter-spacing: -.012em; line-height: 1.3; }
 .sign-article-prose { width: min(calc(100% - 40px), 1040px); }
 .sign-article-page { background: var(--page-background); }
 .sign-introduction { margin-bottom: 1.6rem; }
@@ -178,7 +195,6 @@ a { color: inherit; }
 .contact-page { padding-block: 50px 68px; background: var(--page-background); }
 .contact-layout { width: min(calc(100% - 40px), 1000px); margin-inline: auto; display: grid; grid-template-columns: minmax(260px, 380px) 1fr; gap: clamp(38px, 6vw, 72px); align-items: center; }
 .contact-photo { display: block; width: min(100%, 330px); aspect-ratio: 4 / 5; justify-self: center; object-fit: cover; object-position: center 28%; border: 1px solid rgb(72 100 117 / 18%); border-radius: 20px; box-shadow: 0 18px 42px rgb(28 62 77 / 16%); }
-.contact-copy h2 { margin: 28px 0 12px; color: #17364a; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; font-size: clamp(1.4rem, 2.3vw, 1.8rem); font-weight: 600; letter-spacing: -.025em; }
 .contact-copy > p { margin: 0 0 1.05em; color: #102c3f; font-family: var(--font); font-size: 1.06rem; font-weight: 500; line-height: 1.62; letter-spacing: .008em; text-align: justify; hyphens: auto; }
 .contact-copy strong { color: #173d50; font-weight: 700; }
 .contact-copy .contact-email { margin-top: -12px; }
@@ -231,4 +247,6 @@ a { color: inherit; }
 
 @media (max-width: 600px) {
   .sign-nav .section-nav-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .guru-contact-panel { padding: 23px 20px; }
+  .guru-contact-links { flex-direction: column; gap: 8px; }
 }
