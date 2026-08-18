@@ -249,6 +249,11 @@ a { color: inherit; }
 
 @media (max-width: 600px) {
   .sign-nav .section-nav-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .guru-page .hero-copy .eyebrow { font-size: 0; }
+  .guru-page .hero-copy .eyebrow::after { content: "Astrologer"; font-size: .76rem; }
+  .guru-prose h2 { font-size: 1.08rem; text-wrap: balance; }
   .guru-contact-panel { padding: 23px 20px; }
+  .prose .guru-contact-panel h2 { font-size: 0; }
+  .prose .guru-contact-panel h2::after { content: "Learn More About Dr. Mehta"; font-size: 1rem; }
   .guru-contact-links { flex-direction: column; gap: 8px; }
 }
