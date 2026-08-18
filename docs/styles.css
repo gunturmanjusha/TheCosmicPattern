@@ -116,13 +116,14 @@ a { color: inherit; }
 .note-link::after { position: absolute; inset: 0; content: ""; }
 .site-footer { padding-block: 35px; color: white; background: linear-gradient(110deg, #244b57, #2c5063 52%, #394c70); border-top: 2px solid #b89555; }
 .mobile-footer-nav { display: none; }
-.footer-inner { display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; font-size: 1rem; font-weight: 700; letter-spacing: .01em; }
+.footer-inner { display: grid; grid-template-columns: 1fr auto 1fr; grid-template-rows: auto auto; gap: 6px 20px; align-items: center; font-size: 1rem; font-weight: 700; letter-spacing: .01em; }
 .footer-inner a { color: white; text-decoration: none; }
-.footer-credit .footer-technology-link { color: #f5f8f8; font-size: .82rem; font-weight: 700; letter-spacing: .025em; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; transition: color .18s ease, text-decoration-color .18s ease; }
+.footer-inner > a:first-child { grid-column: 1; grid-row: 1; justify-self: start; }
+.footer-credit { display: contents; }
+.footer-credit > span { grid-column: 2; grid-row: 1; justify-self: center; }
+.footer-credit .footer-technology-link { grid-column: 2; grid-row: 2; justify-self: center; color: #f0d59d; font-size: .82rem; font-weight: 700; letter-spacing: .025em; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; transition: color .18s ease, text-decoration-color .18s ease; }
 .footer-credit .footer-technology-link:hover { color: #f0d59d; text-decoration-color: #f0d59d; }
-.footer-inner > a:last-child { justify-self: end; }
-.footer-credit { display: flex; flex-direction: column; gap: 5px; align-items: center; text-align: center; }
-.footer-launch { color: #f0d59d; font-size: .78rem; font-weight: 700; letter-spacing: .04em; }
+.footer-inner > a:last-child { grid-column: 3; grid-row: 1; justify-self: end; }
 .text-link { color: #245f70; font-weight: 750; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .contact-copy .text-link { color: #174f64; font-size: .96rem; font-weight: 700; }
 
@@ -221,6 +222,7 @@ a { color: inherit; }
 .technology-list li { margin-block: .3rem; padding-left: .25rem; }
 .technology-list li::marker { color: #a47d39; }
 .prose .technology-stack { margin: 1.3rem 0 1.5rem; padding: 16px 18px; color: #24495b; border-left: 3px solid #b89555; background: rgb(222 237 237 / 55%); text-align: left; hyphens: none; }
+.technology-credit { margin-top: 2.8rem; padding-top: 1.15rem; color: #536a79; border-top: 2px solid #b89555; font-size: .76rem; font-weight: 800; letter-spacing: .08em; text-align: center; text-transform: uppercase; white-space: nowrap; }
 .architecture-steps { margin: .8rem 0 1.4rem; padding: 0; list-style: none; counter-reset: architecture-step; }
 .architecture-steps li { position: relative; min-height: 56px; padding: 0 0 18px 52px; counter-increment: architecture-step; }
 .architecture-steps li::before { position: absolute; left: 0; top: 1px; display: grid; width: 34px; height: 34px; place-items: center; color: white; border-radius: 50%; background: #347d88; content: counter(architecture-step); font-size: .82rem; font-weight: 800; }
@@ -252,8 +254,11 @@ a { color: inherit; }
   .contact-photo { width: min(100%, 320px); }
   .social-links { grid-template-columns: 1fr; }
   .social-links .contact-method + .contact-method { padding-left: 0; border-top: 1px solid #c5d7d8; border-left: 0; }
-  .footer-inner { grid-template-columns: 1fr; text-align: center; }
-  .footer-inner > a:last-child { justify-self: center; }
+  .footer-inner { grid-template-columns: 1fr; grid-template-rows: repeat(4, auto); gap: 7px; text-align: center; }
+  .footer-inner > a:first-child { grid-column: 1; grid-row: 1; justify-self: center; }
+  .footer-credit > span { grid-column: 1; grid-row: 2; }
+  .footer-credit .footer-technology-link { grid-column: 1; grid-row: 3; }
+  .footer-inner > a:last-child { grid-column: 1; grid-row: 4; justify-self: center; margin-top: 8px; }
   .mobile-footer-nav { display: grid; grid-template-columns: repeat(4, max-content); justify-content: center; gap: 10px clamp(6px, 2.5vw, 20px); margin-bottom: 26px; padding-bottom: 22px; border-bottom: 1px solid rgb(255 255 255 / 20%); font-size: 1rem; font-weight: 700; letter-spacing: .01em; }
   .mobile-footer-nav a { color: #f5f8f8; text-decoration: none; }
   .about-page { padding-block: 38px 52px; }
@@ -268,6 +273,7 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 @media (max-width: 600px) {
+  .technology-credit { font-size: clamp(.58rem, 2.45vw, .7rem); letter-spacing: .035em; }
   .sign-nav .section-nav-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .guru-page .hero-copy .eyebrow { font-size: 0; }
   .guru-page .hero-copy .eyebrow::after { content: "Teacher · Scholar · Astrologer"; font-size: .76rem; }
