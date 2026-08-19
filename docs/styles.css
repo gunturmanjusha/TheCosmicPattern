@@ -102,6 +102,8 @@ a { color: inherit; }
 .card-author a:hover, .article-author:hover { text-decoration: underline; text-underline-offset: 3px; }
 .card-description, .card-date { margin: 8px 0 0; color: #536a79; font-weight: 600; }
 .card-date { font-size: .78rem; }
+.card-publication-link { position: relative; z-index: 2; color: inherit; font-weight: inherit; text-decoration-color: rgb(195 154 82 / 55%); text-decoration-thickness: 1px; text-underline-offset: 3px; transition: color .18s ease, text-decoration-color .18s ease; }
+.card-publication-link:hover { color: #956d32; text-decoration-color: #b28743; }
 
 .publication-notes { padding-block: 34px; background: var(--page-background); border-top: 1px solid #cfdddf; }
 .notes-grid { display: grid; grid-template-columns: 1.3fr 1fr .85fr; gap: 0; }
