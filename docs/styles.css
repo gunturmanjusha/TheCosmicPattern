@@ -207,7 +207,7 @@ a { color: inherit; }
 .about-intro-copy > p:last-child { margin-bottom: 0; }
 .about-intro-copy strong { color: #173d50; font-weight: 700; }
 .contact-page { padding-block: 50px 68px; background: var(--page-background); }
-.contact-layout { width: min(calc(100% - 40px), 760px); margin-inline: auto; }
+.contact-layout { width: min(calc(100% - 40px), 880px); margin-inline: auto; }
 .contact-copy > p { margin: 0 0 1.05em; color: #102c3f; font-family: var(--font); font-size: 1.06rem; font-weight: 500; line-height: 1.62; letter-spacing: .008em; text-align: justify; hyphens: auto; }
 .contact-copy strong { color: #173d50; font-weight: 700; }
 .contact-copy .contact-email { margin-top: -12px; }
