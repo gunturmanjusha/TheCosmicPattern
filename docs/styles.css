@@ -201,19 +201,24 @@ a { color: inherit; }
 .article-section[hidden] { display: none; }
 .article-end { margin-top: 38px; padding-top: 20px; border-top: 1px solid #c5d8d9; }
 .article-end a { color: #245f70; font-weight: 750; text-underline-offset: 3px; }
+.about-intro { width: min(calc(100% - 40px), 920px); margin: 0 auto 1.25rem; display: grid; grid-template-columns: minmax(270px, 330px) minmax(0, 1fr); gap: clamp(28px, 4vw, 48px); align-items: start; }
+.about-photo { display: block; width: min(100%, 330px); height: 100%; justify-self: center; object-fit: cover; object-position: center 28%; border: 1px solid rgb(72 100 117 / 18%); border-radius: 20px; box-shadow: 0 18px 42px rgb(28 62 77 / 16%); }
+.about-intro-copy > p { margin: 0 0 1.05em; color: #102c3f; font-family: var(--font); font-size: 1.06rem; font-weight: 500; line-height: 1.62; letter-spacing: .008em; text-align: justify; hyphens: auto; }
+.about-intro-copy > p:last-child { margin-bottom: 0; }
+.about-intro-copy strong { color: #173d50; font-weight: 700; }
 .contact-page { padding-block: 50px 68px; background: var(--page-background); }
-.contact-layout { width: min(calc(100% - 40px), 1000px); margin-inline: auto; display: grid; grid-template-columns: minmax(260px, 380px) 1fr; gap: clamp(38px, 6vw, 72px); align-items: center; }
-.contact-photo { display: block; width: min(100%, 330px); aspect-ratio: 4 / 5; justify-self: center; object-fit: cover; object-position: center 28%; border: 1px solid rgb(72 100 117 / 18%); border-radius: 20px; box-shadow: 0 18px 42px rgb(28 62 77 / 16%); }
+.contact-layout { width: min(calc(100% - 40px), 760px); margin-inline: auto; }
 .contact-copy > p { margin: 0 0 1.05em; color: #102c3f; font-family: var(--font); font-size: 1.06rem; font-weight: 500; line-height: 1.62; letter-spacing: .008em; text-align: justify; hyphens: auto; }
 .contact-copy strong { color: #173d50; font-weight: 700; }
 .contact-copy .contact-email { margin-top: -12px; }
 .contact-email a { color: #17566a; font-size: 1.08rem; text-decoration-color: #c39a52; text-decoration-thickness: 2px; text-underline-offset: 5px; overflow-wrap: anywhere; }
+.contact-copy > .contact-consultation-link { text-align: center; }
 .contact-method { padding: 17px 0; border-top: 1px solid #c5d7d8; }
 .contact-method:last-child { border-bottom: 1px solid #c5d7d8; }
 .contact-method > span { display: block; margin-bottom: 4px; color: #536a79; font-size: .75rem; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
 .contact-method a { color: #174f64; font-size: 1.05rem; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .social-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #c5d7d8; border-bottom: 1px solid #c5d7d8; }
-.social-links .contact-method { padding: 14px 18px 14px 0; border: 0; }
+.social-links .contact-method { padding: 14px 18px 14px 0; border: 0; text-align: center; }
 .social-links .contact-method + .contact-method { padding-right: 0; padding-left: 18px; border-left: 1px solid #c5d7d8; }
 .social-links .contact-method a { font-size: .96rem; }
 
@@ -252,8 +257,8 @@ a { color: inherit; }
   .article-card .card-top { justify-content: center; }
   .article-card h3 { margin-inline: auto; }
   .publication-notes { display: none; }
-  .contact-layout { grid-template-columns: 1fr; }
-  .contact-photo { width: min(100%, 320px); }
+  .about-intro { grid-template-columns: 1fr; }
+  .about-photo { width: min(100%, 320px); height: auto; aspect-ratio: 4 / 5; }
   .social-links { grid-template-columns: 1fr; }
   .social-links .contact-method + .contact-method { padding-left: 0; border-top: 1px solid #c5d7d8; border-left: 0; }
   .footer-inner { grid-template-columns: 1fr; grid-template-rows: repeat(4, auto); gap: 7px; text-align: center; }
@@ -287,6 +292,4 @@ a { color: inherit; }
   .guru-contact-mobile-copy { display: inline; }
   .prose .guru-contact-panel p { font-size: .9rem; line-height: 1.55; }
   .guru-contact-links { flex-direction: column; gap: 8px; }
-  .contact-consultation-link,
-  .social-links .contact-method { text-align: center; }
 }
