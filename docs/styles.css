@@ -241,9 +241,10 @@ a { color: inherit; }
 :focus-visible { outline: 3px solid #64e5e0; outline-offset: 4px; }
 
 @media (max-width: 960px) {
-  .site-nav { grid-template-columns: 1fr; }
+  .site-nav { grid-template-columns: 1fr; padding-block: 10px 12px; }
   .site-nav .brand { justify-self: center; }
-  .nav-links { display: none; }
+  .nav-links { display: grid; grid-template-columns: repeat(4, max-content); justify-self: center; gap: 8px clamp(10px, 3vw, 22px); margin-top: 8px; font-size: clamp(.84rem, 2.5vw, 1rem); }
+  .nav-links a:first-child { display: none; }
   .section-heading, .notes-grid { grid-template-columns: 1fr; }
   .hero-grid { display: flex; height: 240px; min-height: 240px; align-items: flex-start; padding-block: 20px 18px; }
   .hero-copy { width: 100%; padding-top: 0; text-align: center; }
