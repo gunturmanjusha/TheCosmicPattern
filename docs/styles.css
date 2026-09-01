@@ -194,6 +194,9 @@ a { color: inherit; }
 .sign-transit-image { display: block; width: 100%; height: auto; margin: 0; border: 1px solid rgb(72 100 117 / 18%); border-radius: 12px; box-shadow: 0 10px 24px rgb(28 62 77 / 12%); }
 .sign-image-link::after { display: block; margin-top: 6px; content: "View full chart"; font-size: .73rem; font-weight: 750; letter-spacing: .06em; text-align: center; text-transform: uppercase; }
 .sign-image-link:hover .sign-transit-image { border-color: rgb(184 149 85 / 55%); box-shadow: 0 12px 28px rgb(28 62 77 / 18%); }
+.sign-image-placeholder { float: left; display: grid; width: min(43%, 420px); aspect-ratio: 4 / 3; margin: 0 30px 14px 0; place-items: center; border: 1px dashed rgb(72 100 117 / 40%); border-radius: 12px; background: rgb(255 255 255 / 32%); color: #52717e; }
+.sign-image-placeholder span { font-size: .76rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.article-copy-placeholder { min-height: 112px; border-radius: 10px; background: repeating-linear-gradient(to bottom, transparent 0, transparent 25px, rgb(49 87 106 / 12%) 26px, transparent 27px); }
 .sign-conclusion { margin-top: 2.4rem; padding-top: .5rem; }
 .chart-lightbox { width: min(calc(100% - 40px), 1180px); max-width: none; max-height: calc(100vh - 40px); padding: 42px 16px 16px; overflow: auto; border: 1px solid rgb(126 214 210 / 38%); border-radius: 16px; background: #173d50; box-shadow: 0 24px 70px rgb(7 17 38 / 48%); }
 .chart-lightbox::backdrop { background: rgb(7 17 38 / 78%); }
@@ -274,6 +277,7 @@ a { color: inherit; }
   .about-page { padding-block: 38px 52px; }
   .article-page { padding-block: 36px 52px; }
   .sign-image-link { float: none; width: min(100%, 440px); margin: 0 auto 1.35rem; }
+  .sign-image-placeholder { float: none; width: min(100%, 440px); margin: 0 auto 1.35rem; }
   .transit-reading-guide { grid-template-columns: 1fr; padding: 6px 0; }
   .transit-reading-guide div { padding: 9px 4px; border-right: 0; border-bottom: 1px solid #c5d8d9; }
   .transit-reading-guide div:last-child { border-bottom: 0; }
