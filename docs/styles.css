@@ -86,6 +86,11 @@ a { color: inherit; }
 .accent-cyan { --accent: #34745e; }
 .accent-violet { --accent: #68558f; }
 .accent-magenta { --accent: #8b536f; }
+.accent-gold { --accent: #956d32; }
+.accent-copper { --accent: #a45f45; }
+.latest-card .latest-status { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; color: #684916; border: 1px solid rgb(184 149 85 / 48%); border-radius: 999px; background: rgb(224 193 125 / 22%); }
+.latest-card .latest-status span { color: #9a742d; font-size: .76rem; line-height: 1; }
+.coming-soon-card .status { padding: 3px 8px; color: #536a79; border: 1px solid #b9ced0; border-radius: 999px; background: rgb(230 240 241 / 72%); }
 .card-top { display: flex; align-items: center; gap: 9px; margin-bottom: 10px; color: #536a79; font-size: .68rem; font-weight: 750; letter-spacing: .09em; text-transform: uppercase; }
 .planet-symbol { display: grid; width: 30px; height: 30px; place-items: center; color: var(--accent); border: 1px solid currentColor; border-radius: 50%; font-family: Georgia, serif; font-size: 1.15rem; line-height: 1; }
 .number { display: none; }
@@ -163,10 +168,10 @@ a { color: inherit; }
 .consultation-list li::marker { color: #b48332; }
 .prose .consultation-email { margin: .2em 0 1.2em; text-align: left; }
 .consultation-email a, .contact-email a { color: #17566a; font-size: 1.08rem; text-decoration-color: #c39a52; text-decoration-thickness: 2px; text-underline-offset: 5px; overflow-wrap: anywhere; }
-.article-hero h1 { max-width: 850px; }
+.article-hero .hero-grid { height: 240px; min-height: 240px; }
+.article-hero h1 { max-width: 850px; font-size: clamp(1.62rem, 2.7vw, 2.4rem); line-height: 1.09; }
+.article-hero .article-meta { margin-top: 20px; }
 .article-meta { display: flex; flex-wrap: wrap; gap: 7px 18px; margin: 14px 0 0; color: #edf5f5; font-size: .78rem; }
-.saturn-retrograde-pisces-hero h1 { line-height: 1.14; }
-.saturn-retrograde-pisces-hero .article-meta { margin-top: 20px; }
 .article-author { color: inherit; font-weight: 700; }
 .section-nav { overflow: hidden; border-bottom: 1px solid #cbdadb; background: #e6f0f1; }
 .section-nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; overflow: visible; padding-block: 7px; }
@@ -251,7 +256,7 @@ a { color: inherit; }
   .nav-links a:first-child { display: none; }
   .section-heading, .notes-grid { grid-template-columns: 1fr; }
   .hero-grid { display: flex; width: min(calc(100% - 28px), var(--container)); height: 240px; min-height: 240px; align-items: flex-start; padding: 20px 0 70px; }
-  .saturn-retrograde-pisces-hero .hero-grid { height: 270px; min-height: 270px; }
+  .article-hero .hero-grid { height: 315px; min-height: 315px; }
   .hero-copy { width: 100%; padding-top: 0; text-align: center; }
   .hero-copy .eyebrow, .hero-copy h1 { margin-inline: auto; }
   .hero-copy .hero-subtitle { margin-inline: auto; font-size: .88rem; }
@@ -287,6 +292,7 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 @media (max-width: 600px) {
+  .coming-soon-card { display: none; }
   .technology-credit { font-size: clamp(.58rem, 2.45vw, .7rem); letter-spacing: .035em; }
   .sign-nav .section-nav-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .guru-page .hero-copy .eyebrow { font-size: 0; }
