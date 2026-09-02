@@ -87,7 +87,7 @@ a { color: inherit; }
 .accent-magenta { --accent: #8b536f; }
 .accent-gold { --accent: #956d32; }
 .accent-copper { --accent: #a45f45; }
-.latest-card .latest-status { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; color: #21646a; border: 1px solid rgb(44 123 129 / 35%); border-radius: 999px; background: rgb(126 214 210 / 13%); }
+.latest-card .latest-status { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; color: #18575d; border: 1px solid rgb(44 123 129 / 48%); border-radius: 999px; background: rgb(126 214 210 / 21%); font-size: .66rem; font-weight: 800; letter-spacing: .1em; }
 .latest-card .latest-status img { width: 12px; height: 12px; border-radius: 3px; }
 .coming-soon-card .status { padding: 3px 8px; color: #536a79; border: 1px solid #b9ced0; border-radius: 999px; background: rgb(230 240 241 / 72%); }
 .card-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; color: #536a79; font-size: .64rem; font-weight: 750; letter-spacing: .085em; text-transform: uppercase; }
