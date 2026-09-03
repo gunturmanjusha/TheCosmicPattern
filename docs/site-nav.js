@@ -21,6 +21,7 @@
       toggle.setAttribute("aria-expanded", "false");
       if (activeCloseMenu === closeMenu) {
         overlay.classList.remove("is-visible");
+        document.body.classList.remove("nav-open");
         activeCloseMenu = undefined;
       }
     };
@@ -32,6 +33,7 @@
         nav.classList.add("is-open");
         toggle.setAttribute("aria-expanded", "true");
         overlay.classList.add("is-visible");
+        document.body.classList.add("nav-open");
         activeCloseMenu = closeMenu;
       }
     });

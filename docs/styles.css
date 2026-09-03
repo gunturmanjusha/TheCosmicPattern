@@ -253,6 +253,8 @@ a { color: inherit; }
 :focus-visible { outline: 3px solid #64e5e0; outline-offset: 4px; }
 
 @media (max-width: 960px) {
+  body.nav-open { overflow: hidden; }
+  html.nav-enabled .hero:has(.site-nav.is-open) { z-index: 31; overflow: visible; }
   .site-nav { position: relative; grid-template-columns: 1fr; }
   .site-nav .brand { justify-self: center; }
   html.nav-enabled .site-nav.is-open { z-index: 31; }
