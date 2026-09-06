@@ -279,6 +279,7 @@ a { color: inherit; }
   html.nav-enabled .site-nav.is-open .nav-toggle > span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
   html.nav-enabled .nav-links { position: fixed; z-index: 32; top: 56px; right: 20px; display: none; width: min(280px, calc(100vw - 40px)); padding: 12px 18px; flex-direction: column; align-items: stretch; gap: 0; color: #f5f8f8; border: 1px solid rgb(224 193 125 / 42%); border-radius: 10px; background: #286d75; box-shadow: 0 16px 30px rgb(7 17 38 / 24%); font-size: 1rem; font-weight: 700; letter-spacing: .01em; }
   html.nav-enabled .site-nav.is-open .nav-links { display: flex; }
+  html.nav-enabled .nav-links .mobile-author-link[hidden] { display: block !important; }
   html.nav-enabled .nav-links a { padding: 10px 2px; border-bottom: 1px solid rgb(255 255 255 / 16%); }
   html.nav-enabled .nav-links a:last-child { border-bottom: 0; }
   .section-heading, .notes-grid { grid-template-columns: 1fr; }
@@ -323,8 +324,9 @@ a { color: inherit; }
 @media (max-width: 600px) {
   .coming-soon-card { display: none; }
   .spirituality-articles .coming-soon-card { display: flex; }
-  .spirituality-about summary { align-items: flex-start; }
-  .spirituality-about-action { flex: 0 0 auto; }
+  .spirituality-about summary { align-items: flex-start; gap: 8px; }
+  .spirituality-about summary > span:first-child { font-size: .92rem; letter-spacing: .025em; white-space: nowrap; }
+  .spirituality-about-action { flex: 0 0 auto; font-size: .64rem; letter-spacing: .065em; white-space: nowrap; }
   .technology-credit { font-size: clamp(.58rem, 2.45vw, .7rem); letter-spacing: .035em; }
   .sign-nav .section-nav-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .guru-page .hero-copy .eyebrow { font-size: 0; }
