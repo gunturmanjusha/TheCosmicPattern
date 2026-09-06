@@ -324,7 +324,7 @@ a { color: inherit; }
 @media (max-width: 600px) {
   .coming-soon-card { display: none; }
   .spirituality-articles .coming-soon-card { display: flex; }
-  .spirituality-about summary { align-items: flex-start; gap: 8px; }
+  .spirituality-about summary { flex-direction: column; align-items: center; gap: 5px; text-align: center; }
   .spirituality-about summary > span:first-child { font-size: .92rem; letter-spacing: .025em; white-space: nowrap; }
   .spirituality-about-action { flex: 0 0 auto; font-size: .64rem; letter-spacing: .065em; white-space: nowrap; }
   .technology-credit { font-size: clamp(.58rem, 2.45vw, .7rem); letter-spacing: .035em; }
