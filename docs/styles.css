@@ -47,7 +47,6 @@ a { color: inherit; }
 .section-kicker { color: var(--cobalt); }
 .eyebrow { display: flex; align-items: center; gap: 9px; }
 .eyebrow span { width: 8px; height: 8px; flex: 0 0 8px; border-radius: 50%; background: #e0c17d; box-shadow: 0 0 8px rgb(224 193 125 / 38%); }
-.prameela-eyebrow .eyebrow-label { width: auto; height: auto; min-width: 0; flex: 1 1 auto; border-radius: 0; background: none; box-shadow: none; }
 .hero h1 { max-width: 720px; margin: 0; color: white; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; font-size: clamp(1.75rem, 3.25vw, 2.8rem); font-weight: 600; letter-spacing: -.035em; line-height: 1.06; }
 .hero h1 em { color: #e4ca8d; font-style: normal; text-shadow: 0 0 24px rgb(224 193 125 / 25%); }
 .hero-subtitle { max-width: 660px; margin: 14px 0 0; color: #f0f4f5; font-size: clamp(.92rem, 1.25vw, 1.04rem); }
@@ -288,8 +287,8 @@ a { color: inherit; }
   .article-hero .hero-grid { height: 315px; min-height: 315px; }
   .hero-copy { width: 100%; padding-top: 0; text-align: center; }
   .hero-copy .eyebrow, .hero-copy h1 { margin-inline: auto; }
-  .prameela-eyebrow { display: grid; width: fit-content; max-width: 100%; grid-template-columns: 8px minmax(0, 1fr); align-items: center; line-height: 1.3; text-align: left; }
-  .prameela-eyebrow .eyebrow-label { overflow-wrap: anywhere; }
+  .prameela-eyebrow { font-size: 0; }
+  .prameela-eyebrow::after { content: "Faith · Reflection"; font-size: .76rem; }
   .hero-copy .hero-subtitle { margin-inline: auto; font-size: .88rem; }
   .hero-copy .article-meta { justify-content: center; }
   .cosmic-map { display: none; }
