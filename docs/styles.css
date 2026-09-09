@@ -288,7 +288,7 @@ a { color: inherit; }
   .hero-copy { width: 100%; padding-top: 0; text-align: center; }
   .hero-copy .eyebrow, .hero-copy h1 { margin-inline: auto; }
   .prameela-eyebrow { font-size: 0; }
-  .prameela-eyebrow::after { content: "Faith · Reflection"; font-size: .76rem; }
+  .prameela-eyebrow::after { content: "A life of faith and reflection"; font-size: .76rem; }
   .hero-copy .hero-subtitle { margin-inline: auto; font-size: .88rem; }
   .hero-copy .article-meta { justify-content: center; }
   .cosmic-map { display: none; }
