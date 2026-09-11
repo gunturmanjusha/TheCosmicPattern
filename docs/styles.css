@@ -183,7 +183,7 @@ a { color: inherit; }
 .consultation-list li::marker { color: #b48332; }
 .prose .consultation-email { margin: .2em 0 1.2em; text-align: left; }
 .consultation-email a, .contact-email a { color: #17566a; font-size: 1.08rem; text-decoration-color: #c39a52; text-decoration-thickness: 2px; text-underline-offset: 5px; overflow-wrap: anywhere; }
-.article-hero .hero-grid { height: 240px; min-height: 240px; }
+.article-hero .hero-grid { height: auto; min-height: 0; }
 .article-hero h1 { max-width: 850px; font-size: clamp(1.62rem, 2.7vw, 2.4rem); line-height: 1.09; }
 .article-hero .article-meta { margin-top: 20px; }
 .article-meta { display: flex; flex-wrap: wrap; gap: 7px 18px; margin: 14px 0 0; color: #edf5f5; font-size: .78rem; }
@@ -284,7 +284,7 @@ a { color: inherit; }
   html.nav-enabled .nav-links a:last-child { border-bottom: 0; }
   .section-heading, .notes-grid { grid-template-columns: 1fr; }
   .hero-grid { display: flex; width: min(calc(100% - 28px), var(--container)); height: 240px; min-height: 240px; align-items: flex-start; padding: 20px 0; }
-  .article-hero .hero-grid { height: 315px; min-height: 315px; }
+  .article-hero .hero-grid { height: auto; min-height: 0; }
   .hero-copy { width: 100%; padding-top: 0; text-align: center; }
   .hero-copy .eyebrow, .hero-copy h1 { margin-inline: auto; }
   .prameela-eyebrow { font-size: 0; }
