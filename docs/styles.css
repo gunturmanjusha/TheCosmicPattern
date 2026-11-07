@@ -315,6 +315,7 @@ a { color: inherit; }
   .prameela-page { padding-bottom: 28px; }
   .article-page { padding-block: 36px 52px; }
   .sign-image-link { float: none; width: min(100%, 440px); margin: 0 auto 1.35rem; }
+  .sign-article-prose .after-chart-heading { padding-top: 0; }
   .sign-image-placeholder { float: none; width: min(100%, 440px); margin: 0 auto 1.35rem; }
   .transit-reading-guide { grid-template-columns: 1fr; padding: 6px 0; }
   .transit-reading-guide div { padding: 9px 4px; border-right: 0; border-bottom: 1px solid #c5d8d9; }
