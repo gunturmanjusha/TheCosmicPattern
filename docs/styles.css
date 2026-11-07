@@ -210,6 +210,7 @@ a { color: inherit; }
 .sign-section { display: block; margin: 2rem 0; padding: 1.8rem; border: 1px solid #bdd4d6; border-radius: 16px; background: linear-gradient(135deg, #e3f1f0, #e6f0f2 58%, #e4edf2); box-shadow: 0 12px 30px rgb(40 72 88 / 9%); }
 .sign-section::after { display: block; clear: both; content: ""; }
 .sign-section h2 { padding-bottom: .55rem; border-bottom: 1px solid #bdd4d6; }
+.sign-article-prose .after-chart-heading { clear: both; padding-top: 1.6rem; }
 .sign-image-link { float: left; display: block; width: min(43%, 420px); margin: 0 30px 14px 0; color: #31576a; text-decoration: none; }
 .sign-transit-image { display: block; width: 100%; height: auto; margin: 0; border: 1px solid rgb(72 100 117 / 18%); border-radius: 12px; box-shadow: 0 10px 24px rgb(28 62 77 / 12%); }
 .sign-image-link::after { display: block; margin-top: 6px; content: "View full chart"; font-size: .73rem; font-weight: 750; letter-spacing: .06em; text-align: center; text-transform: uppercase; }
