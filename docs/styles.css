@@ -199,7 +199,7 @@ a { color: inherit; }
 .article-prose h2 { scroll-margin-top: 18px; }
 .article-prose h2:first-child { margin-top: 0; }
 .sign-article-prose { width: min(calc(100% - 40px), 1040px); }
-.sign-article-page { background: var(--page-background); }
+.sign-article-page { background: #edf5f5; }
 .sign-introduction { margin-bottom: 1.6rem; }
 .transit-reading-guide { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: .9rem 0 1.4rem; padding: 14px 0; border-top: 1px solid #c5d8d9; border-bottom: 1px solid #c5d8d9; }
 .transit-reading-guide div { padding: 0 18px; border-right: 1px solid #c5d8d9; }
